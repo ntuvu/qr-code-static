@@ -1,0 +1,1 @@
+# Make a basic static QR code :-D
