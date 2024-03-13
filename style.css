@@ -1,0 +1,73 @@
+:root {
+  --white: hsl(0, 0%, 100%);
+  --light-gray: hsl(212, 45%, 89%);
+  --grayish-blue: hsl(220, 15%, 55%);
+  --dark-blue: hsl(218, 44%, 22%);
+}
+
+body {
+  font-family: "Outfit", sans-serif;
+  font-size: 15px;
+  background-color: var(--light-gray);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+
+.box-card {
+  max-width: 300px;
+}
+
+.card {
+  background-color: var(--white);
+  border-radius: 20px;
+  padding: 20px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+}
+
+.qr-image img {
+  width: 100%;
+  margin-bottom: 20px;
+  border-radius: 10px;
+}
+
+.title p {
+  color: var(--dark-blue);
+  font-size: 22px;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+.note p {
+  color: var(--grayish-blue);
+  font-size: 15px;
+  font-weight: 500;
+}
+
+@media (max-width: 375px) {
+  body {
+    font-size: 14px; /* Slightly smaller font size for mobile */
+  }
+
+  .box-card {
+    width: 90%; /* Use a percentage of the screen width */
+    margin: 0 auto; /* Center the card horizontally */
+  }
+
+  .card {
+    padding: 15px; /* Slightly smaller padding for mobile */
+  }
+
+  .title p {
+    font-size: 20px; /* Adjust font size for smaller screens */
+  }
+
+  .note p {
+    font-size: 14px; /* Adjust note paragraph font size */
+  }
+}
